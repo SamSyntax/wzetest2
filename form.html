@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Input Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <form action="index.html" method="GET">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Wprowadź wiadomość"
+        maxlength="250"
+      />
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        placeholder="Wprowadź autora"
+        maxlength="25"
+      />
+      <input
+        type="submit"
+        onclick="handleSubmit()"
+        id="submitbtn"
+      />
+    </form>
+  </body>
+</html>

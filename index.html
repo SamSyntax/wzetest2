@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>WZE APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- LOGO WZE -->
+    <div class="logowze">
+      <img src="logo.png" alt="" srcset="" />
+    </div>
+    <!-- start slidera -->
+    <div class="slider">
+      <div class="slides">
+        <!-- przyciski radio start -->
+        <!-- <div class="radio"> -->
+
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <!-- </div> -->
+        <!-- przyciski radio koniec -->
+        <div class="slide first" id="slide first">
+          <div class="weather">
+            <div
+              id="MyClockDisplay"
+              class="clock"
+              onload="showTime()"
+            ></div>
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/pl/52d3021d16/zielonka/"
+              data-label_1="ZIELONKA"
+              data-label_2="WEATHER"
+              data-font="Roboto"
+              data-icons="Climacons"
+              data-theme="original"
+              data-basecolor="rgba(157, 178, 193, 0)"
+              >ZIELONKA WEATHER</a
+            >
+          </div>
+          <script>
+            !(function (d, s, id) {
+              var js,
+                fjs = d.getElementsByTagName(s)[0];
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src =
+                  "https://weatherwidget.io/js/widget.min.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            })(document, "script", "weatherwidget-io-js");
+          </script>
+        </div>
+
+        <div class="slide second">
+          <h3 class="header2">
+            Litwo! Ojczyzno maja! Ty jesteś jak zdrowie, Ile cię
+            trzeba cenić, ten tylko się dowie, Kto cię stracił.
+            Dziś piękność twą w całej ozdobie Widzę i opisuję, bo
+            tęsknię po tobie" Panno święta, co Jasnej bronisz
+            Częstochowy I w Ostrej świecisz Bramie! Ty, co gród
+            zamkowy Nowogródzki ochraniasz z jego wiernym ludem!
+          </h3>
+          <p class="podpis">~ Adam Mickiewicz</p>
+        </div>
+
+        <div class="slide third">
+          <h3 class="header3" id="result-name"></h3>
+          <p id="result-surname" class="podpis"></p>
+        </div>
+
+        <div class="slide fourth">
+          <script
+            class="imieniny"
+            type="text/javascript"
+            src="https://imienniczek.pl/widget/js"
+          ></script>
+          <header class="header4"></header>
+        </div>
+        <div class="manual-nav">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
